@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اعلامي</title>
+    <title>اعلامي - التطبيق الأول لطلبة الإعلام</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Cairo', 'Tajawal', sans-serif;
             background: linear-gradient(135deg, #0A1929, #1565C0, #0A1929);
             min-height: 100vh;
             display: flex;
@@ -16,18 +16,29 @@
             color: white;
             text-align: center;
             padding: 20px;
+            line-height: 1.7;
         }
         .container {
-            max-width: 500px;
+            max-width: 600px;
+            width: 100%;
         }
         .logo {
-            font-size: 80px;
-            margin-bottom: 10px;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(255,193,7,0.4);
+            object-fit: cover;
         }
         h1 {
-            font-size: 40px;
+            font-size: 42px;
             color: #FFC107;
-            margin-bottom: 20px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 24px;
         }
         .description {
             text-align: right;
@@ -35,9 +46,49 @@
             border-radius: 15px;
             padding: 20px;
             margin: 20px 0;
-            line-height: 2;
             color: #ddd;
             font-size: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .features-title {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFC107;
+            margin: 20px 0 12px;
+        }
+        .features {
+            text-align: right;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 16px 20px;
+            font-size: 14px;
+            color: #ddd;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .features li {
+            list-style: none;
+            padding: 4px 0;
+        }
+        .tech-title {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFC107;
+            margin: 20px 0 12px;
+        }
+        .tech {
+            text-align: right;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 16px 20px;
+            font-size: 14px;
+            color: #ddd;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .tech li {
+            list-style: none;
+            padding: 4px 0;
         }
         .download-btn {
             display: inline-block;
@@ -48,7 +99,7 @@
             font-weight: bold;
             border-radius: 50px;
             text-decoration: none;
-            margin: 15px 0;
+            margin: 25px 0 15px;
             box-shadow: 0 5px 25px rgba(255,193,7,0.4);
             transition: 0.3s;
         }
@@ -57,35 +108,61 @@
             transform: scale(1.05);
         }
         .footer {
-            margin-top: 25px;
+            margin-top: 24px;
             color: #aaa;
             font-size: 13px;
-            line-height: 1.8;
+            line-height: 2;
+        }
+        .divider {
+            height: 1px;
+            background: rgba(255,255,255,0.15);
+            margin: 16px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">🎤</div>
+        <img src="https://i.ibb.co/RTPTR3Vv/icon-png.jpg" alt="اعلامي" class="logo">
         <h1>اعلامي</h1>
+        <p class="subtitle">التطبيق الأول من نوعه</p>
 
         <div class="description">
-            تطبيق تعليمي تفاعلي تم انشاء التطبيق بمساعدة Deep Seek &Claude&You Tube  يستهدف  الطلبة الجدد في قسم الاعلام.<br><br>
-            يحتوي التطبيق على مجموعة متنوعة من الأسئلة الإعلامية التي تغطي الإعلام الليبي والعربي والعالمي،
-            بالإضافة إلى أسئلة ثقافية عامة مع شرح مفصل لكل إجابة.<br><br>
-            يقدم التطبيق عدة أقسام مميزة منها تحدي "أنت وصاحبك" للعب الجماعي،
-            و"الغلطة القاتلة" للأسئلة الصعبة، ومغامرة "جزيرة بارنج" التفاعلية،
-            ولعبة "دودة العملات" اليومية، وقسم "قصتنا" لبناء قصة جماعية.<br><br>
-            كما يحتوي على متجر للمساعدات ونظام عملات وأوسمة تحفيزية،
-            وقسم لأذكار الامتحان، وشرح لتخصصات الإعلام، وطرق عالمية للدراسة،
-            ونصائح ذهبية للمتفوقين.
+            تطبيق <strong>اعلامي</strong> هو تطبيق أكاديمي تعليمي تفاعلي يستهدف طلبة الإعلام، تم تطويره بمساعدة <strong>Claude AI</strong> و <strong>DeepSeek</strong> و <strong>YouTube</strong>.<br><br>
+            يهدف التطبيق إلى تمكين الطلبة من اختبار معارفهم الإعلامية وتطوير مهاراتهم عبر أسئلة متنوعة ونظام تحفيزي متكامل يشمل العملات والأوسمة والمساعدات.
         </div>
 
-        <a href="https://www.mediafire.com/file/i2lm1k0bm8zu6xa/app-release.apk/file">⬇️ تحميل التطبيق</a>
+        <div class="features-title"> أبرز المميزات:</div>
+        <div class="features">
+            <li>📚 أسئلة إعلامية متنوعة (ليبي، عربي، عالمي)</li>
+            <li>📝 أسئلة ثقافية حديثة مع شرح مفصل</li>
+            <li>📖 الأسئلة السابقة لقسم الإعلام</li>
+            <li>🎓 طرق الدراسة العالمية</li>
+            <li>🏆 كن إعلامي الأسبوع - منافسة أونلاين</li>
+            <li>⚔️ تحدي أنت وصاحبك</li>
+            <li>🐛 دودة العملات</li>
+            <li>💀 الغلطة القاتلة</li>
+            <li>🛒 متجر المساعدات والأفاتارات</li>
+            <li>🎖️ نظام الأوسمة والإنجازات</li>
+        </div>
+
+        <div class="tech-title">🛠️ التقنيات المستخدمة:</div>
+        <div class="tech">
+            <li>💙 Flutter - إطار العمل الرئيسي</li>
+            <li>💻 VS Code - بيئة التطوير</li>
+            <li>🔥 Firebase - قاعدة البيانات الأونلاين</li>
+            <li>🤖 Claude AI - المساعدة في التطوير</li>
+            <li>🧠 DeepSeek - المساعدة في التطوير</li>
+            <li>📺 YouTube - المصادر التعليمية</li>
+        </div>
+
+        <a href="https://www.mediafire.com/file/v1z8txo13ejde0u/app-release.apk/file" class="download-btn" target="_blank">⬇️ تحميل التطبيق</a>
+
+        <div class="divider"></div>
 
         <div class="footer">
-            المطور: عبد السلام عبد الفتاح<br>
-            تحت إشراف: أ. رقية عيسى
+            <strong>المطور:</strong> عبدالسلام عبدالفتاح<br>
+            <strong>تحت إشراف:</strong> أ. رقية عيسى علي<br>
+            <strong>الإصدار:</strong> 1.0.0
         </div>
     </div>
 </body>
